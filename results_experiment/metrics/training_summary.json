@@ -1,0 +1,29 @@
+[
+  {
+    "variant": "vanilla",
+    "parameters": 1000528,
+    "best_epoch": 42,
+    "best_validation_loss": 5.896177493158223,
+    "best_validation_chrf": 18.586828943080143,
+    "checkpoint": "D:\\uir 5 eme annee\\advanced NLP\\projet\\english-darija-lstm(2)\\checkpoints_experiment\\vanilla_best.pt",
+    "history": "D:\\uir 5 eme annee\\advanced NLP\\projet\\english-darija-lstm(2)\\results_experiment\\history\\vanilla_history.csv"
+  },
+  {
+    "variant": "wmc",
+    "parameters": 1098832,
+    "best_epoch": 47,
+    "best_validation_loss": 6.090235763227913,
+    "best_validation_chrf": 18.62023688627619,
+    "checkpoint": "D:\\uir 5 eme annee\\advanced NLP\\projet\\english-darija-lstm(2)\\checkpoints_experiment\\wmc_best.pt",
+    "history": "D:\\uir 5 eme annee\\advanced NLP\\projet\\english-darija-lstm(2)\\results_experiment\\history\\wmc_history.csv"
+  },
+  {
+    "variant": "cifg",
+    "parameters": 951120,
+    "best_epoch": 47,
+    "best_validation_loss": 5.812021235410237,
+    "best_validation_chrf": 20.23805670797298,
+    "checkpoint": "D:\\uir 5 eme annee\\advanced NLP\\projet\\english-darija-lstm(2)\\checkpoints_experiment\\cifg_best.pt",
+    "history": "D:\\uir 5 eme annee\\advanced NLP\\projet\\english-darija-lstm(2)\\results_experiment\\history\\cifg_history.csv"
+  }
+]

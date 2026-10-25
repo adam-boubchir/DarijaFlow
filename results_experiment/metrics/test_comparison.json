@@ -1,0 +1,29 @@
+[
+    {
+        "model": "vanilla",
+        "test_bleu": 1.1617902795577473,
+        "test_chrf": 17.605034127352432,
+        "test_loss": 5.843684450126354,
+        "test_sentences": 1305,
+        "parameters": 1000528,
+        "evaluation_seconds": 2.87
+    },
+    {
+        "model": "wmc",
+        "test_bleu": 1.4897151041988763,
+        "test_chrf": 18.004795201494755,
+        "test_loss": 6.0772718185369055,
+        "test_sentences": 1305,
+        "parameters": 1098832,
+        "evaluation_seconds": 3.18
+    },
+    {
+        "model": "cifg",
+        "test_bleu": 1.9335278767626685,
+        "test_chrf": 19.699491543179565,
+        "test_loss": 5.732443256191862,
+        "test_sentences": 1305,
+        "parameters": 951120,
+        "evaluation_seconds": 3.81
+    }
+]

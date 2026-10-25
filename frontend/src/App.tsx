@@ -72,7 +72,7 @@ function AppContent() {
 
     try {
       const response = await fetch(
-        'http://127.0.0.1:8000/translate',
+        'https://desktop-mvj3uvi.tail4accb8.ts.net/translate',
         {
           method: 'POST',
           headers: {
@@ -687,7 +687,7 @@ function AppContent() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/DarijaFlow">
       <AppContent />
     </BrowserRouter>
   )

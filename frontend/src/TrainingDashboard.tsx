@@ -15,7 +15,7 @@ const fmt = (v:unknown) => { const n=num(v); return n===null?'—':n.toLocaleStr
 export default function TrainingDashboard() {
  const [data,setData]=useState<Payload|null>(null), [loading,setLoading]=useState(true), [error,setError]=useState(''), [tab,setTab]=useState<'overview'|'history'|'compare'|'examples'>('overview')
  const [selected,setSelected]=useState<string[]>(['vanilla','cifg','wmc']), [metric,setMetric]=useState('train_loss'), [chartType,setChartType]=useState<'line'|'area'|'bar'>('line'), [query,setQuery]=useState('')
- const load=async()=>{setLoading(true);setError('');try{const r=await fetch('http://127.0.0.1:8000/analytics/data');if(!r.ok)throw new Error(`API Analytics indisponible (${r.status}).`);const d=await r.json();setData(d);if(d.error) setError(d.error)}catch(e){setError(e instanceof Error?e.message:'Impossible de charger les résultats.');setData(null)}finally{setLoading(false)}}
+ const load=async()=>{setLoading(true);setError('');try{const r=await fetch('https://desktop-mvj3uvi.tail4accb8.ts.net/analytics/data');if(!r.ok)throw new Error(`API Analytics indisponible (${r.status}).`);const d=await r.json();setData(d);if(d.error) setError(d.error)}catch(e){setError(e instanceof Error?e.message:'Impossible de charger les résultats.');setData(null)}finally{setLoading(false)}}
  useEffect(()=>{void load()},[])
  const models=data?.models||[]; const active=models.filter(m=>selected.includes(m.model));
  const historyKeys=useMemo(()=>Array.from(new Set(models.flatMap(m=>m.history.flatMap(r=>Object.keys(r))))).filter(k=>k!=='epoch'&&models.some(m=>m.history.some(r=>num(r[k])!==null))),[models])
